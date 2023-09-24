@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>wedit tamplates online</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+</head>
+
+<style>
+	
+*{
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	max-width: 100rem;
+	margin: 0 auto; 
+	font-size: 1rem;
+	line-height: 1.3;
+	background-color: #f5f5f5;
+	font-family: sans-serif;
+}
+
+h1, h5 {
+	padding: 0.5rem;
+}
+
+.center {
+	text-align: center;
+
+}
+
+
+.center1 {
+	text-align: center;
+	color: #1E90FF;
+	position: relative;
+	bottom: -19px;
+
+}
+
+
+
+
+
+
+/*Flexbox Cards*/
+.cards {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.card-item {
+	display: flex;
+	width: 100%;
+	padding: 0.5em;
+}
+
+/* ===== == = === 37.5em (600px) === = == ===== */
+@media all and (min-width: 37.5em) {
+	.card-item {
+			width: calc(100% / 12 * 6 );
+	}
+}
+/* ===== == = === 56.25em (900px) === = == ===== */
+@media all and (min-width: 56.25em) {
+	.card-item {
+			width: calc(100% / 12 * 4 );
+	}
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+	padding: 10px;
+	background-color: #F8FFF8;
+	border-radius: 3px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+
+
+.card-body:hover {
+
+    background: #D8D4D4;
+    color:black;
+    transform: scale(1.02);
+}
+
+
+
+
+.card-body p {
+	flex: 1 0 auto;
+	margin: 0;
+}
+
+.card-img {
+	width: 100%;
+	border-radius: 10px 10px 10px 10px;
+	border: 3px solid #1E90FF;
+}
+
+.card-img:hover {
+	transform: scale(1.10);
+}
+
+.card-title,
+.card-text,
+.card-footer {
+	padding: 1em 1em 0;
+}
+
+.card-footer {
+	margin-bottom: 1em;
+}
+
+.btn {
+	display: inline-block;
+	margin: 1rem;
+	padding: .75rem 1.25rem;
+	font: 700 1rem/1.2 Verdana, sans-serif;
+	letter-spacing: .05rem;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(77,77,77,.5);
+	background: #1E90FF;
+	border-radius: .25rem;
+	box-shadow: 0 0 1px 1px rgba(77,77,77,.5);
+	color: floralwhite;
+	cursor: pointer;
+	transition: .5s;
+	font-family: sans-serif;
+}
+
+.btn:hover {
+	background: white;
+	color: #1E90FF;
+	 transform: scale(1.02);
+}
+
+
+.btn2 {
+	display: inline-block;
+	margin: 1rem;
+	padding: .75rem 1.25rem;
+	font: 700 1rem/1.2 Verdana, sans-serif;
+	letter-spacing: .05rem;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(77,77,77,.5);
+	background: green;
+	border-radius: .25rem;
+	box-shadow: 0 0 1px 1px rgba(77,77,77,.5);
+	color: floralwhite;
+	cursor: pointer;
+	transition: .5s;
+	font-family: sans-serif;
+	 
+    
+}
+
+.btn2:hover {
+	background: white;
+	color: green;
+	 transform: scale(1.02);
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #8AEEF2;
+    color: black;
+    padding: 20px 0;
+    border-top: 2px solid #19E3EA;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.social-icons a:hover{
+  text-decoration: underline;
+  transform: scale(1.02);
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+p {
+    margin: 0;
+}
+
+p:hover{
+	 transform: scale(1.02);
+	 text-decoration: underline;
+}
+
+/* Media Query for screens smaller than 768px (typical phone screens) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+
+<nav class="navbar  bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo2.svg" alt="Logo" width="46" height="35" class="align-text-bottom-left"><b>
+      WeDit
+    </b>
+    </a>
+  </div>
+</nav>
+
+
+
+<ul class="nav sticky-top border-bottom bg-light justify-content-center nav-underline">
+  <li class="nav-item">
+    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tamplates</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" aira-disable="true">Disable</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" aria-disabled="true">Disable</a>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="center1"><b>Download Our New Tamplates & Designs And Use Freely</b></h1>
+	<h5 class="center1"></h5>
+	<div class="cards">
+		<div class="card-item">
+			<div class="card-body">
+				<img class="card-img" src="images/coming.jpg" alt="" />
+				<h2 class="card-title center"><b>Birthday banner new download now free as your wish best quality images and tamplate by wedit download now</b></h2>
+				<p class="card-text"></p>
+				<div class="card-footer center">
+					<a class="btn" href="#">Use Tamplate</a>
+					<a class="btn2" href="#" alt="download">Download Tamplate</a>
+				</div>
+			</div>
+		</div>
+		<div class="card-item">
+			<div class="card-body">
+				<img class="card-img" src="images/coming.jpg" alt="" />
+				<h2 class="card-title center"><b>Birthday banner new download now free as your wish best quality images and tamplate by wedit download now</b></h2>
+				<p class="card-text"></p>
+				<div class="card-footer center">
+					<a class="btn" href="">Use Tamplate</a>
+					<a class="btn2" href="">Download Tamplate</a>
+				</div>
+			</div>
+		</div>
+		<div class="card-item">
+			<div class="card-body">
+				<img class="card-img" src="images/coming.jpg" alt="" />
+				<h2 class="card-title center"><b>Birthday banner new download now free as your wish best quality images and tamplate by wedit download now</b></h2>
+				<p class="card-text"></p>
+				<div class="card-footer center">
+					<a class="btn" href="#">Use Tamplate</a>
+					<a class="btn2" href="#">Download Tamplate</a>
+				</div>
+			</div>
+		</div>
+		<div class="card-item">
+			<div class="card-body">
+				<img class="card-img" src="images/coming.jpg" alt="" />
+				<h2 class="card-title center"><b>Birthday banner new download now free as your wish best quality images and tamplate by wedit download now</b></h2>
+				<p class="card-text"></p>
+				<div class="card-footer center">
+					<a class="btn" href="">Use Tamplate</a>
+					<a class="btn2" href="">Download Tamplate</a>
+				</div>
+			</div>
+		</div>
+		<div class="card-item">
+			<div class="card-body">
+				<img class="card-img" src="images/coming.jpg" alt="" />
+				<h2 class="card-title center">Birthday banner new download now free as your wish best quality images and tamplate by wedit download now</h2>
+				<p class="card-text"></p>
+				<div class="card-footer center">
+					<a class="btn" href="">Use Tamplate</a>
+					<a class="btn2" href="">Download Tamplate</a>
+				</div>
+			</div>
+		</div>
+		<div class="card-item">
+			<div class="card-body">
+				<img class="card-img" src="images/coming.jpg" alt="" />
+				<h2 class="card-title center"><b>Birthday banner new download now free as your wish best quality images and tamplate by wedit download now</b></h2>
+				<p class="card-text"></p>
+				<div class="card-footer center">
+					
+					<a class="btn" href="">Use Tamplate</a>
+					<a class="btn2" href="">Download Tamplate</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav aria-label="...">
+  <ul class="pagination justify-content-center pagination-lg ">
+    <li class="page-item " aria-current="page">
+      <span class="page-link "><a href="tamplate1.html">1</span>
+    </li>
+    <li class="page-item"><a class="page-link" href="tamplate2.html">2</a></li>
+
+    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Footer</title>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#"><img src="images/insta.png" alt="Facebook">instagram</a>
+                <a href="https://wa.me/+918793684578"><img src="images/whatsapp.png" alt="">whatsapp</a>
+                <a href="#"><img src="images/telegram.png" alt="">telegram</a>
+                
+            </div>
+            <p>&copy; 2023 by <b>3Dots</b>. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
