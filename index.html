@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>wedit/home/page</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+
+
+
+
+</head>
+<style>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  height: 205px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: green;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+
+
+
+.features-grid {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+@media (min-width: 650px) {  
+  .features-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  
+  }  
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 650px) {  
+  .inverse {
+    order: 2;
+  }  
+}
+
+.features-image img {
+  width: 100%;
+
+
+}
+
+
+
+@media (min-width: 650px) and (max-width: 899px) {
+  .features-text h2 {
+    font-size: 1.25rem
+  }
+}
+
+@media (min-width: 1200px) {
+  .features-text h2 {
+    font-size: 2rem;
+
+  }
+}
+
+.features-text p {
+  line-height: 1.3;
+  height: 50px;
+}
+
+@media (min-width: 1200px) {
+  .features-text p {
+    font-size: 1.0rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+.features-grid1 {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: ;
+
+}
+
+@media (min-width: 650px) {  
+  .features-group1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  
+  }  
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 650px) {  
+  .inverse {
+    order: 2;
+  }  
+}
+
+.features-image1 img {
+  width: 100%;
+  padding: 40px;
+  border-radius: 15%;
+ 
+
+
+
+
+
+}
+
+
+
+@media (min-width: 650px) and (max-width: 899px) {
+  .features-text1 h2 {
+    font-size: 1.10rem
+
+
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .features-text1 h2 {
+    font-size: 2rem;
+    padding: 30px;
+
+  }
+}
+
+.features-text1 p {
+  line-height: 1.3;
+  height: 50px;
+
+}
+
+@media (min-width: 1200px) {
+  .features-text1 p {
+    font-size: 1.25rem;
+    padding: 30px;
+  }
+}
+
+
+
+.whatsapp button{
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  border-top-left-radius: 20px;
+  border-top-right-radius:20px ;
+  border-bottom-right-radius:20px;
+  border-bottom-left-radius:20px ;
+  width: 195px;
+  height: 45px;
+  font-family: sans-serif;
+   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  
+
+}
+
+
+.whatsapp button:hover{
+  background-color: white;
+  color: green;
+  text-decoration: underline;
+  transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #8AEEF2;
+    color: black;
+    padding: 20px 0;
+    border-top: 2px solid #19E3EA;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.social-icons a:hover{
+  text-decoration: underline;
+  transform: scale(1.02);
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+p {
+    margin: 0;
+}
+
+/* Media Query for screens smaller than 768px (typical phone screens) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+.btn2 {
+  border-radius: 4px;
+  background-color: green;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font: 700 1rem/1.2 sans-serif;
+  padding: .75rem 1.25rem;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 1rem;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  text-decoration: blink;
+}
+
+.btn2{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  top: 20px;
+}
+
+.btn2:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 12px;
+  right: -18px;
+  transition: 0.5s;
+}
+
+.btn2:hover{
+  padding-right: 24px;
+  padding-left:8px;
+  transform: scale(1.02);
+}
+
+.btn2:hover:after {
+  opacity: 1;
+  right: 17px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<body>
+
+
+
+<nav class="navbar  bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand " href="#">
+      <img src="images/logo2.svg" alt="logo" width="46" height="35" class=" align-text-bottom-left"><b>
+      WeDit
+    </b>
+    </a>
+  </div>
+</nav>
+
+
+
+<ul class="nav sticky-top border-bottom bg-light justify-content-center nav-underline">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Home</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="tamplate1.html" role="button" aria-expanded="false">Tamplates</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" aira-disable="true">Disable</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" aria-disabled="true">Disable</a>
+  </li>
+</ul>
+
+
+<div class="container">
+    <p>WeDit <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+  </div>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="features-grid">
+  
+  
+  <article class="features-group">
+    <div class="features-image">
+      <img src="images/website.gif" alt="Illustration of a man touching a large check icon">
+    </div>
+    <div class="features-text">
+      <h2><b>WeDit Download & Use high quality tamplates & images free</b><h2>
+      <p>WeDit is free tamplates & designes platform</p>
+      <a class="btn2" href="tamplate1.html">View Tampates</a>
+    </div>
+  </article>
+  
+
+
+
+ <article class="features-group">
+    <div class="features-image inverse">
+      <img src="images/canva5.gif" alt="Illustration of a woman standing next to a mail envelope">
+    </div>
+    <div class="features-text">
+      <h2><b>Customize your tamplates & design on canva Easily</b></h2>
+      <p><b>simple to easy customize your tamplates & design on canva.canva is simple designing tool</b> </p>
+    </div>
+  </article>
+</section>
+
+
+
+<article class="features-group1">
+    <div class="features-image1">
+      <img src="images/whatsapp.gif" alt="Illustration of a man touching a large check icon">
+    </div>
+    <div class="features-text1">
+      <h2><b><b>For custom designing contact on </b> <a class="whatsapp" href="https://wa.me/+918793684578"><button>WHATSAPP</button></a></b></h2>
+      <p><b>Click to redirect on whatsapp chat and design your custom designes Hi "Iam (Nehal Shaikh) </b> </p>
+   
+    </div>
+  </article>
+
+
+
+
+
+
+<article class="features-group1">
+    <div class="features-image1 inverse">
+      <img src="images/scrolling.gif" alt="Illustration of a woman standing next to a mail envelope">
+    </div>
+    <div class="features-text1">
+      <h2><b>Easy to scroll and view Tamplates & Designes</b></h2>
+      <p><b>simple to use and scroll and veiw tamplates & designes Easily</b> </p>
+    </div>
+  </article>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Footer</title>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#"><img src="images/insta.png" alt="Facebook">instagram</a>
+                <a href="https://wa.me/+918793684578"><img src="images/whatsapp.png" alt="">whatsapp</a>
+                <a href="#"><img src="images/telegram.png" alt="">telegram</a>
+                
+            </div>
+            <p><u>&copy; 2023 by</u> <b>3Dots</b><u>. All rights reserved.</u></p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+<script>
+	
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["Free Tamplates", "High Quality Tamplates", "Download & Use", ""];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
